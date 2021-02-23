@@ -37,12 +37,13 @@
 
         <ImageView
             android:id="@+id/linphone_logo"
-            android:src="@drawable/linphone_logo_orange"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_below="@id/question"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="36dp"/>
+            android:layout_marginTop="36dp"
+            android:src="@drawable/linphone_logo_orange_asli"
+            tools:visibility="invisible" />
 
         <ProgressBar
             android:id="@+id/progress_bar"

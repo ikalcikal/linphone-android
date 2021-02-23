@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -39,8 +40,10 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:paddingTop="20dp"
+                android:text="@string/about_version"
                 android:textColorLink="?attr/secondaryTextColor"
-                android:text="@string/about_version" />
+                android:visibility="invisible"
+                tools:visibility="invisible" />
 
             <TextView
                 android:id="@+id/about_liblinphone_sdk_version"
@@ -49,8 +52,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:text="@string/about_liblinphone_sdk_version"
                 android:textColorLink="?attr/secondaryTextColor"
-                android:text="@string/about_liblinphone_sdk_version" />
+                android:visibility="invisible"
+                tools:visibility="invisible" />
 
         </LinearLayout>
 
@@ -58,9 +63,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:orientation="vertical"
             android:background="?attr/backgroundColor"
-            android:padding="10dp">
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="invisible"
+            tools:visibility="invisible">
 
             <TextView
                 android:id="@+id/about_link"
@@ -81,8 +88,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="web"
-                android:paddingTop="10dp"
                 android:gravity="center"
+                android:paddingTop="10dp"
                 android:text="@string/about_privacy_policy"
                 android:textColorLink="@color/primary_color" />
 
@@ -103,34 +110,34 @@
                 android:background="?attr/dividerColor" />
 
             <LinearLayout
-                android:background="?attr/backgroundColor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingTop="20dp"
-                android:orientation="horizontal">
+                android:background="?attr/backgroundColor"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
 
                 <Button
                     android:id="@+id/send_log"
+                    style="@style/button_font"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:background="@drawable/assistant_button"
-                    android:textColor="@drawable/assistant_button_text_color"
-                    style="@style/button_font"
                     android:padding="10dp"
-                    android:text="@string/menu_send_log" />
+                    android:text="@string/menu_send_log"
+                    android:textColor="@drawable/assistant_button_text_color" />
 
                 <Button
                     android:id="@+id/reset_log"
+                    style="@style/button_font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:background="@drawable/assistant_button"
-                    android:textColor="@drawable/assistant_button_text_color"
-                    style="@style/button_font"
                     android:padding="10dp"
-                    android:text="@string/menu_reset_log" />
+                    android:text="@string/menu_reset_log"
+                    android:textColor="@drawable/assistant_button_text_color" />
 
             </LinearLayout>
 

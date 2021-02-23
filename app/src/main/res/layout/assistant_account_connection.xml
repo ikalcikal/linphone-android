@@ -148,10 +148,11 @@
                     style="@style/standard_small_text_font"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_alignParentTop="true"
+                    android:gravity="center"
                     android:paddingTop="10dp"
-                    android:text="@string/assistant_linphone_login_desc" />
+                    android:text="@string/assistant_linphone_login_desc"
+                    android:visibility="invisible" />
 
                 <LinearLayout
                     android:id="@+id/username_layout"
